@@ -1,0 +1,273 @@
+/* 웹 상의 폰트 파일을 사용하는 경우 */
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KBO-Dia-Gothic_bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+html {
+    scroll-behavior: smooth; /* 스크롤 시 부드럽게 이동 */
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#header {
+    position:fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #1A2A57;
+    padding-left: 30px;
+    margin: 0px;
+}
+#title{
+    background-color: #ffffff;
+    color: #2B4898;
+    margin-top: 15px;
+    width: 450px;
+    height: 70px;
+    text-align: center;
+    
+}
+#title > p {
+    font-family: 'KBO-Dia-Gothic_bold';
+    font-size: 50px;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+#menu {
+    /*background-color: #2B4898;*/
+    position: absolute;
+    right: 100px;
+    bottom: 0px;
+    width: 500px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+#menu p {
+    font-family: 'KBO-Dia-Gothic_bold';
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    font-weight: 900;
+}
+#menu a {
+    color: #ffffff;
+}
+#menu a:link {
+    text-decoration: none;
+}
+#menu a :hover {
+    background-color: #ffffff;
+    color: #1A2A57;
+    text-decoration: none;
+}
+
+/* --------------- 여기부터 본론 --------------- */
+#maincontainer {
+    position: relative;
+    /*background-color: antiquewhite;*/
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 120px;
+
+}
+#firstpage {
+    /*background-color: aqua;*/
+    margin: 0 auto;
+    width: 100%;
+    height: 80%;
+    text-align: center;
+}
+#firstpage img {
+    width: 70%;
+}
+#secondpage {
+    /*background-color: aqua;*/
+    margin: 0 auto;
+    width: 75%;
+}
+#secondpage p {
+    font-family: 'omyu_pretty';
+    font-size: 30px;
+    line-height: 180%;
+}
+#boldword {
+    font-size: 40px;
+    font-weight: 500;
+    padding: 5px;
+    letter-spacing: 1px
+}
+#line3 a {
+    color: black;
+}
+#line3 a:link {
+    text-decoration: none;
+}
+#line3 a:hover {
+    background-color:#2B4898;
+    color: #ffffff;
+}
+#bottom_bar {
+    background-color: #1A2A57;
+    width: 100%;
+    height: 75px;
+    margin-top: 50px;
+}
+/*--------------- WORKs PAGE ---------------*/
+#mainboard {
+    position: relative;
+    /*background-color: antiquewhite;*/
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+.yearboard {
+    position: relative;
+    background-color: #1A2A57;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+}
+.year {
+    background-color:#2B4898;
+    margin: 0;
+    width: 375px;
+    height: 100%;
+    text-align: center;
+}
+.year p {
+    margin: 0 auto;
+    padding-top: 5px;
+    font-family: 'KBO-Dia-Gothic_bold';
+    font-size: 40px;
+    color: #ffffff;
+}
+.workboard {
+    background-color: #EFEFEF;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.artwork {
+    background-color: #ffffff;
+    width: 250px;
+    height: 250px;
+}
+.artwork img {
+    width: 100%;
+}
+.moreboard {
+    position: relative;
+    background-color: #ffffff;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.point {
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+.overlay {
+    position: absolute;
+    background-color: #2B4898;
+    opacity: 0.0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+}
+.overlay p {
+    font-family: 'omyu_pretty';
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 85px;
+    margin-bottom: 85px;
+}
+.moreboard :hover .overlay {
+    opacity: 0.95;
+}
+.endboard {
+    background-color: #1A2A57;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 60px;
+}
+/* ---------------------------------- 반응형 웹구현 ----------------------------------*/
+@media screen and (max-width: 1060px) {
+
+    /* --------------- Header --------------- */
+    #header {
+        height: 120px;
+        padding: 0;
+        text-align: center;
+        
+    }
+    #title{
+        margin: 15px auto 0 auto;
+        padding-bottom: 5px;
+        width: 350px;
+        height: 50px;
+        text-align: center;
+    }
+    #title > p {
+        font-size: 40px;
+        margin: 0;
+        font-weight: 900;
+        letter-spacing: 5px;
+    }
+    #menu {
+        position: relative;
+        margin: 0 auto;
+        top: 15px;
+        right: 0px;
+        width: 500px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #menu p {
+        font-size: 17px;
+    }
+    /* ------------------------------------------------------------ */
+    #maincontainer {
+        padding-top: 130px;
+    }
+    #bottom_bar {
+        height: 50px;
+    }
+    /*--------------- WORKs PAGE ---------------*/
+    #mainboard {
+        padding-top: 130px;
+    }
+    .moreboard {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .overlay p {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+}
