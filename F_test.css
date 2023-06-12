@@ -126,6 +126,12 @@ body {
     width: 100%;
     height: 75px;
     margin-top: 50px;
+    text-align: center;
+}
+#bottom_bar p {
+    font-family: 'omyu_pretty';
+    color: #ffffff;
+    font-size: 20px;
 }
 /*--------------- WORKs PAGE ---------------*/
 #mainboard {
@@ -255,6 +261,9 @@ body {
     }
     #bottom_bar {
         height: 50px;
+    }
+    #bottom_bar p {
+        font-size: 15px;
     }
     /*--------------- WORKs PAGE ---------------*/
     #mainboard {
